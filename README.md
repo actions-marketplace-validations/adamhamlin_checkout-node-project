@@ -12,9 +12,9 @@ steps:
     uses: actions/checkout@v4
 
   - name: Then install Node.js
-    uses: actions/setup-node@v4
+    uses: actions/setup-node@v6
     with:
-      node-version: 20.x
+      node-version: 26.x
 
   - name: Then install dependencies
     run: npm ci
@@ -23,7 +23,7 @@ with...
 ```yaml
 steps:
   - name: All above steps in one!
-    uses: adamhamlin/checkout-node-project@v1
+    uses: adamhamlin/checkout-node-project@v2
     with:
-      node-version: 20.x
+      node-version: 26.x
 ```
