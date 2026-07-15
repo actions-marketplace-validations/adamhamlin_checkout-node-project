@@ -6,6 +6,6 @@ jobs:
     name: Workflow to test checkout-node-project action using `act`
     steps:
       - name: Test the checkout-node-project action
-        uses: ./ # uses an action in the root directory
+        uses: . # uses the action in the repository root
         with:
           node-version: 24.x
